@@ -53,7 +53,7 @@ public class Start extends ClassProperties {
 		Utility.captureScreenshot(driver, "LoginPage");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2 ,dataProvider ="excel-data")
 	private void login() throws InterruptedException {
 		// add username
 		loginPage.userName.sendKeys("shadyahmed01091997@outlook.com");
